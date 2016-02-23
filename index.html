@@ -21,10 +21,7 @@ body{
     font-family:"YuGothic", "游ゴシック", "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "sans-serif";
     font-size:14px;
 }
-.container{
-}
 header{
-  background:#00A6EA;
   padding:0 0;
   margin-bottom:10px;
 }
@@ -39,6 +36,20 @@ footer{
   margin-top:50px;
   padding:10px 0;
   text-align:center;
+}
+.button{
+  background-color:#00A6EA;
+  padding:10px 30px;
+  width:20%;
+  text-align:center;
+  display:inline-block;
+  color:white;
+  float:right;
+}
+.button:hover{
+  background-color:white;
+  border:1px solid #00A6EA;
+  color:#00A6EA;
 }
 
 
@@ -73,7 +84,7 @@ font-size: 14px;
             <span class="icon-bar"></span> 
           </button>
           
-          <a class="navbar-brand" href="#"><img src="logo.png" class="img-circle" alt="Cinque Terre" width="30" height="30"></a>
+          <a class="navbar-brand" href="#"><img src="logo.png" class="img-circle" alt="Cinque Terre" width="30" height="30" style="margin:auto;"></a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar" style="text-align:center;">
         <ul class="nav navbar-nav navbar-left">
@@ -89,6 +100,7 @@ font-size: 14px;
         </div>
       </div>
     </nav>
+    
     
     </header>
     
@@ -123,21 +135,23 @@ font-size: 14px;
 <div class="tab-content">
   <div id="home" class="tab-pane fade in active">
     
-    
+    <di class="row">
     <div class="profile1 col-sm-3" style="display:inline-block;">
       <img src="logo.png" alt="picture" style="max-width:120px;" style="border:2px solid #fff;">
     </div>
     <div class="profile2 col-sm-9">
-      <h5>PROFILE</h5>
+      <h5 style="font-weight:bold;">PROFILE</h5>
       <p>1988年 広島県出身｜吉原 明(Yoshihara Akira)</p>
-      <h5>趣味・特技</h5>
+      <h5 style="font-weight:bold">趣味・特技</h5>
       <p>プログラミング(HTML,css,bootstrap,Ruby)の予定</p>
-    </div>
+      <button type="button" class="btn  btn-block btn-sm" style="background-color:#00A6EA; color:white"><a href="#">編集する</a></button>
 
+    </div>
+   
     </hr>
-    
-     
-    <h4>海外経験</h4>  
+
+
+    <h4 style="display:inline-block; margin-top:20px;">海外経験</h4>  
   
         <table class="table table-bordered">
           <thead>
@@ -169,10 +183,25 @@ font-size: 14px;
             </tr>
           </tbody>
         </table>
+
+    <h4 style="display:inline-block; margin-top:20px;">言語スキル</h4>
+
+<div class="panel panel-default horixontal">
+  <div class="panel-heading">日本語</div>
+  <div class="panel-body">ネイティブレベル</div>
+</div>
+<div class="panel panel-default horixontal">
+  <div class="panel-heading">中国語</div>
+  <div class="panel-body">日常会話レベル</div>
+</div>
+<div class="panel panel-default horixontal">
+  <div class="panel-heading">英語</div>
+  <div class="panel-body">日常会話レベル</div>
+</div>
+<div class="button"><a href="#" target="_blank" style="color:white;">+追加</a></div>
         
   </div>
-    
-    
+
   
   <div id="menu1" class="tab-pane fade">
     <h3>職歴</h3>
@@ -181,20 +210,23 @@ font-size: 14px;
   <div id="menu2" class="tab-pane fade">
     <h3>学歴</h3>
     <p>中退なので、高卒になります！</p>
+    
+    
+    
   </div>
 </div>
         
 <hr/>
 
 
-<ul class="pagination">
+<ul class="pagination hidden-xs" style="text-align:center;">
   <li class="active"><a href="#">1</a></li>
   <li><a href="#">2</a></li>
   <li><a href="#">3</a></li>
   <li><a href="#">4</a></li>
   <li><a href="#">5</a></li>
 </ul>
-<ul class="pager">
+<ul class="pager hidden-xs">
   <li class="previous"><a href="#">Previous</a></li>
   <li class="next"><a href="#">Next</a></li>
 </ul>
@@ -210,7 +242,17 @@ font-size: 14px;
           <li><a href="#">友達100人作ろう！</a></li>
           <li><a href="#">プログラムミングを趣味にしよう！</a></li>
           <li><a href="#">初心者でも書けるプログラミング</a></li>
-          </p>
+        </ol>
+          
+        <h3>カテゴリー別</h3>
+        <ol>
+          <li><a href="#">台湾の食生活</a></li>
+          <li><a href="#">イギリスの生活事情</a></li>
+          <li><a href="#">オーストラリア英語</a></li>
+          <li><a href="#">色んな雑談</a></li>
+          </ol>
+          
+          
         </div>
           
         </div>
