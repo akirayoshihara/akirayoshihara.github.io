@@ -4,15 +4,217 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap Sample</title>
+    <title>AkiraYoshihara</title>
     <!-- BootstrapのCSS読み込み -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <!-- jQuery読み込み -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- BootstrapのJS読み込み -->
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
+<!--
+1.自己紹介を記載。
+2.https://github.com/akirayoshihara へのリンク記載
+3.title,meta(descriptionなど) タグなど適切に設定すること。
+-->
+<style>
+body{
+    font-family:"YuGothic", "游ゴシック", "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "sans-serif";
+    font-size:14px;
+}
+.container{
+}
+header{
+  background:#00A6EA;
+  padding:0 0;
+  margin-bottom:10px;
+}
+navbar{
+  text-align:center;
+}
+button{
+}
+footer{
+  background:#000;
+  color:white;
+  margin-top:50px;
+  padding:10px 0;
+  text-align:center;
+}
+
+
+
+@media (max-width: 768px) {
+body {
+font-size: 12px;
+}
+h1{
+  font-size:14px;
+  color:#eee
+}
+h2 {
+font-size: 24px;
+}
+.panel-title {
+font-size: 14px;
+}
+}
+</style>
+</head>
+  
+  <body>　<!-- ボディー -->
+    <header>　<!-- メニュー -->
+    <nav class="navbar navbar-default navbar-fixed-top">  <!-- memo  style="background-color:#00A6EA;" -->
+      <div class="container-fluid">
+        <div class="navbar-header">
+          
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span> 
+          </button>
+          
+          <a class="navbar-brand" href="#"><img src="logo.png" class="img-circle" alt="Cinque Terre" width="30" height="30"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar" style="text-align:center;">
+        <ul class="nav navbar-nav navbar-left">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">サービス</a></li>
+          <li><a href="#">会社概要</a></li> 
+          <li><a href="#">お問い合わせ</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+        </div>
+      </div>
+    </nav>
+    
+    </header>
+    
+    
+    <div class="container">
+      <div class="row">
+        <div class="content col-sm-9">　<!-- コンテンツ -->
+
+<ul class="breadcrumb">
+  <li><a href="#">Home</a></li>
+  <li><a href="#">Private</a></li>
+  <li><a href="#">Pictures</a></li>
+  <li class="active">Vacation</li> 
+</ul>
+
+
+<a href="#demo" data-toggle="collapse">?</a>
+<div id="demo" class="collapse">
+このページでは私の紹介・練習ページです。
+</div>
+
+
+
+
+<ul class="nav nav-tabs">
+  <li class="active"><a data-toggle="tab" href="#home">マイページ</a></li>
+  <li><a data-toggle="tab" href="#menu1">職歴</a></li>
+  <li><a data-toggle="tab" href="#menu2">学歴</a></li>
+</ul>
+
+
+<div class="tab-content">
+  <div id="home" class="tab-pane fade in active">
+    
+    
+    <div class="profile1 col-sm-3" style="display:inline-block;">
+      <img src="logo.png" alt="picture" style="max-width:120px;" style="border:2px solid #fff;">
+    </div>
+    <div class="profile2 col-sm-9">
+      <h5>PROFILE</h5>
+      <p>1988年 広島県出身｜吉原 明(Yoshihara Akira)</p>
+      <h5>趣味・特技</h5>
+      <p>プログラミング(HTML,css,bootstrap,Ruby)の予定</p>
+    </div>
+
+    </hr>
+    
+     
+    <h4>海外経験</h4>  
+  
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>留学期間(term)</th>
+              <th>年齢(years)</th>
+              <th>タイプ(type)</th>
+              <th>都市(city)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2008.03-2009.01</td>
+              <td>19-20</td>
+              <td>語学留学</td>
+              <td>オーストラリア(パース)</td>
+            </tr>
+            <tr>
+              <td>2009.01-2009.04</td>
+              <td>20-21</td>
+              <td>語学留学</td>
+              <td>イギリス(ロンドン)</td>
+            </tr>
+            <tr>
+              <td>2010.04-2016.02</td>
+              <td>22-28</td>
+              <td>交換留学</td>
+              <td>台湾(台北)</td>
+            </tr>
+          </tbody>
+        </table>
+        
+  </div>
+    
+    
+  
+  <div id="menu1" class="tab-pane fade">
+    <h3>職歴</h3>
+    <p>僕の職歴です！！</p>
+  </div>
+  <div id="menu2" class="tab-pane fade">
+    <h3>学歴</h3>
+    <p>中退なので、高卒になります！</p>
+  </div>
+</div>
+        
+<hr/>
+
+
+<ul class="pagination">
+  <li class="active"><a href="#">1</a></li>
+  <li><a href="#">2</a></li>
+  <li><a href="#">3</a></li>
+  <li><a href="#">4</a></li>
+  <li><a href="#">5</a></li>
+</ul>
+<ul class="pager">
+  <li class="previous"><a href="#">Previous</a></li>
+  <li class="next"><a href="#">Next</a></li>
+</ul>
+        </div>
+        
+        <div class="content col-sm-3">　　<!-- サイドバー -->
+        
+        <button type="button" class="btn btn-default btn-block hidden-xs">履歴書DL</button>
+
+        <h3>ブログ記事ランキング</h3>
+        <ol>
+          <li><a href="#">近日の台湾生活</a></li>
+          <li><a href="#">友達100人作ろう！</a></li>
+          <li><a href="#">プログラムミングを趣味にしよう！</a></li>
+          <li><a href="#">初心者でも書けるプログラミング</a></li>
+          </p>
+        </div>
+          
+        </div>
+    </div>
+    <footer>@akira yoshihara 2015</footer>　　<!-- フッター -->
   </body>
 </html>
