@@ -4,7 +4,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>AkiraYoshihara</title>
+    
+    <meta name="description" content="ポートフォリオ｜AkiraYoshihara(台湾生活～プログラマーへの道)">
+    <meta name="keywords" content="HTML,CSS,BOOTSTRAP">
+    <meta name="author" content="Akira Yoshihara">
+    
+    
+    <title>ポートフォリオ｜AkiraYoshihara(台湾生活～プログラマーへの道)</title>
     <!-- BootstrapのCSS読み込み -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <!-- jQuery読み込み -->
@@ -12,18 +18,24 @@
     <!-- BootstrapのJS読み込み -->
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <!--
-1.自己紹介を記載。
-2.https://github.com/akirayoshihara へのリンク記載
+1.自己紹介を記載。ok
+2.https://github.com/akirayoshihara へのリンク記載 ok
 3.title,meta(descriptionなど) タグなど適切に設定すること。
 -->
 <style>
 body{
     font-family:"YuGothic", "游ゴシック", "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "sans-serif";
     font-size:14px;
+    margin:0;
+    padding:0;
+}
+.container{
+  padding:0 10px;
 }
 header{
   padding:0 0;
-  margin-bottom:10px;
+  margin-bottom:31px;
+  background-color:red;
 }
 navbar{
   text-align:center;
@@ -34,7 +46,7 @@ footer{
   background:#000;
   color:white;
   margin-top:50px;
-  padding:10px 0;
+  padding:10px 0 50px 0;
   text-align:center;
 }
 .button{
@@ -50,6 +62,20 @@ footer{
   background-color:white;
   border:1px solid #00A6EA;
   color:#00A6EA;
+}
+.navbar .navbar-default .navbar-fixed-top{
+  background-color:green;
+}
+
+nav#breadcrumbs ol li {
+  display: inline;
+  list-style-type: none;
+}
+nav#breadcrumbs ol li:before {
+  content: " > ";
+}
+nav#breadcrumbs ol li:first-child:before {
+  content:"";
 }
 
 
@@ -71,43 +97,58 @@ font-size: 14px;
 }
 </style>
 </head>
-  
-  <body>　<!-- ボディー -->
-    <header>　<!-- メニュー -->
-    <nav class="navbar navbar-default navbar-fixed-top">  <!-- memo  style="background-color:#00A6EA;" -->
-      <div class="container-fluid">
-        <div class="navbar-header">
+
+
+   <header>　<!-- メニュー -->
+        <nav class="navbar navbar-default navbar-fixed-top">  <!-- memo  style="background-color:#00A6EA;" -->
           
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span> 
-          </button>
-          
-          <a class="navbar-brand" href="#"><img src="logo.png" class="img-circle" alt="Cinque Terre" width="30" height="30" style="margin:auto;"></a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar" style="text-align:center;">
-        <ul class="nav navbar-nav navbar-left">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">サービス</a></li>
-          <li><a href="#">会社概要</a></li> 
-          <li><a href="#">お問い合わせ</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-        </ul>
-        </div>
-      </div>
-    </nav>
-    
-    
+          <div class="header1" style="margin:auto; text-align:center; max-width:1170px;">
+            <div class="navbar-header" >
+              
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span> 
+              </button>
+              
+              <a class="navbar-brand" href="#"><img src="logo.png" class="img-circle" alt="Cinque Terre" width="30" height="30"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-left">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#">サービス</a></li>
+              <li><a href="#">会社概要</a></li> 
+              <li><a href="#">お問い合わせ</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+              <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+            </div>
+          </div>
+        </nav>
     </header>
     
-    
-    <div class="container">
+  
+  <body>　<!-- ボディー -->
+    <div class="container"><!-- 聞こえてます！何がわかりづらいです？？ -->
       <div class="row">
         <div class="content col-sm-9">　<!-- コンテンツ -->
+        
+<nav id="breadcrumbs">
+  <ol>
+    <li itemscope="itemscope" itemtype="#">
+      <a itemprop="url" href="#"><span itemprop="title">HOME</span></a>
+    </li>
+    <li itemscope="itemscope" itemtype="#">
+      <a itemprop="url" href="#"><span itemprop="title">第2階層</span></a>
+    </li>
+    <li itemscope="itemscope" itemtype="#">
+      <span itemprop="title">現在のページ</span>
+    </li>
+  </ol>
+</nav>
+
 
 <ul class="breadcrumb">
   <li><a href="#">Home</a></li>
@@ -119,7 +160,7 @@ font-size: 14px;
 
 <a href="#demo" data-toggle="collapse">?</a>
 <div id="demo" class="collapse">
-このページでは私の紹介・練習ページです。
+<p><a href="https://github.com/akirayoshihara">https://github.com/akirayoshihara</a>へリンク</p>
 </div>
 
 
